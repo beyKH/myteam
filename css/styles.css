@@ -377,3 +377,37 @@ img {
   line-height: 25px;
   color: rgba(255, 255, 255, 0.8);
 }
+
+
+/* DELIVERY */
+
+.delivery {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color:var(--color-secondary-deep-jungle-green);
+}
+
+.delivery__container {}
+
+.container {}
+
+.delivery__desc {
+  width: 930px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.delivery__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: var(--color-primary-white);
+}
+
+.delivery__heading span{
+  color: var(--color-secondary-rapture-blue);
+}
