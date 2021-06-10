@@ -1,17 +1,45 @@
 :root {
-  --main-font:;
-  --main-font-color: ;
-  --main-accent-color:;
-  --main-danger-color: ;
-  --main-light-color:;
-  --main-grey-color: ;
-  --main-border-radius:;
-  --main-box-shadow:;
-  --main-transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease, opacity 0.3s ease;
-  --main-linear-bg: ;
-
-
+  --color-primary-midnight-green: #014E56;
+  --color-primary-light-coral: #f67e7e;
+  --color-primary-white: #fff;
+  --color-secondary-rapture-blue: #79c8c7;
+  --color-secondary-police-blue: #2c6269;
+  --color-secondary-deep-jungle-green: #004047;
+  --color-secondary-sacramento: #012f34;
+  --color-secondary-dark-green: #002529;
+  --main-font: "Livvic", "Arial", sans-serif;
 }
+
+
+
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Medium.woff2") format("woff2");
+  src: url("../fonts/Livvic-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-SemiBold.woff2") format("woff2");
+  src: url("../fonts/Livvic-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Livvic";
+  src: url("../fonts/Livvic-Bold.woff2") format("woff2");
+  src: url("../fonts/Livvic-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 
 /* GENERAL */
@@ -33,8 +61,9 @@ body {
   height: 100%;
   padding: 0;
   margin: 0;
-  font-family: "Arial", sans-serif;
+  font-family: var(--main-font);
   background-color: #fff;
+  color: #fff;
 }
 
 img {
@@ -53,6 +82,17 @@ img {
   overflow: hidden;
 }
 
+/* REUSABLE  STYLE*/
+
+.btn {
+  text-decoration: none;
+  border-radius: 24px;
+  border: 2px solid transparent;
+  color: #fff;
+  text-transform: lowercase;
+  padding: 10px 32px;
+}
+
 
 /* CONTAINER */
 .container {
@@ -61,4 +101,165 @@ img {
   padding-right: 20px;
   margin-left: auto;
   margin-right: auto;
+}
+
+
+/* SITE-HEADER */
+.site__header {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: var(--color-primary-midnight-green);
+}
+
+.site__header__container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 80px;
+  transition: opacity 0.3s ease;
+}
+
+.logo:hover{
+  opacity: 0.8;
+}
+
+.logo:active{
+  opacity: 0.6;
+}
+
+.logo__img {
+  display: block;
+}
+
+.sitenav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.sitenav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav__link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  text-transform: lowercase;
+}
+
+.sitenav__link:hover{
+  color: var(--color-primary-light-coral);
+}
+
+.sitenav__link:active{
+  opacity: 0.6;
+}
+
+.button--primary{
+  border-color: #fff;
+  transition: color 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+}
+
+.button--primary:hover{
+  background-color: #fff;
+  color: var(--color-primary-midnight-green);
+}
+
+.button--primary:active{
+  opacity: 0.6;
+}
+
+
+
+/* SITE-CONTENT */
+
+.site-content {
+  flex-grow: 1;
+}
+
+/* HERO */
+.hero {
+  padding-top: 55px;
+  padding-bottom: 255px;
+  background-color: var(--color-primary-midnight-green);
+  overflow-y: hidden;
+}
+
+.hero__container {
+  display: flex;
+  position: relative;
+}
+.hero__container::before{
+  display: block;
+  position: absolute;
+  content: '';
+  width: 200px;
+  height: 200px;
+  left: -265px;
+  background-image: url("../img/hero-circle-black.svg");
+  background-repeat: no-repeat;
+
+}
+
+.hero__container::after{
+  display: block;
+  content: '';
+  position: absolute;
+  background-image: url("../img/hero-double-circle.svg");
+  width: 358px;
+  height: 200px;
+  left: calc(50% + 150px);
+  top: 350px;
+}
+
+.hero__title-box {
+  width: 635px;
+  margin-right: 30px;
+
+}
+
+.hero__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 104px;
+  line-height: 100px;
+  color: var(--color-primary-white);
+}
+
+.hero__heading span{
+  color: var(--color-primary-light-coral);
+}
+
+
+.hero__deatials::before{
+  margin-bottom: 80px;
+  display: block;
+  content: '';
+  width: 50px;
+  height: 4px;
+  background-color: var(--color-secondary-rapture-blue);
+}
+.hero__deatials {
+  width: 445px;
+}
+
+.hero__info {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-primary-white);
 }
