@@ -64,6 +64,7 @@ body {
   font-family: var(--main-font);
   background-color: #fff;
   color: #fff;
+  overflow-x: hidden;
 }
 
 img {
@@ -262,4 +263,117 @@ img {
   font-size: 18px;
   line-height: 28px;
   color: var(--color-primary-white);
+}
+
+
+/* FEATURES-SECTION */
+
+.features {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  background-color: var(--color-secondary-sacramento);
+}
+
+.features__container {
+  display: flex;
+  position: relative;
+}
+
+.features__container::after{
+  content: '';
+  position: absolute;
+  z-index: 1;
+  width: 200px;
+  height: 244px;
+  left: calc(100%  + 100px);
+  top:calc(100% - 105px);
+  background-image: url("../img/feature-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+
+}
+
+
+.features__title-box {
+  width: 445px;
+}
+.features__title-box::before{
+  display: block;
+  content: '';
+  width: 50px;
+  height: 4px;
+  margin-bottom: 54px;
+  background-color: var(--color-primary-light-coral);
+}
+
+.features__heading {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 125px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--color-primary-white);
+}
+
+.features__list {
+  margin: 0;
+  padding: 0;
+  width: 540px;
+  list-style: none;
+}
+
+.features__item:not(:last-child){
+  margin-bottom: 32px;
+}
+
+
+.feature{
+  display: flex;
+}
+
+.feature::before {
+  flex-shrink: 0;
+  margin-right: 23px;
+  width: 72px;
+  height: 72px;
+  display: block;
+  content: '';
+  background-repeat: no-repeat;
+
+}
+
+
+/* individual items icons */
+.experienced-individuals {
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-experienced-person.svg");
+
+}
+
+.easy-to-implement {
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-easy-to-implement.svg");
+}
+
+.enhanced-prodcutivity {
+  background-repeat: no-repeat;
+  background-image: url("../img/icon-enhanced-productivity.svg");
+}
+
+.feature__heading {
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-primary-light-coral);
+}
+
+.feature__info {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.8);
 }
