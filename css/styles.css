@@ -296,6 +296,7 @@ img {
 
 .features__title-box {
   width: 445px;
+  margin-right: 125px;
 }
 .features__title-box::before{
   display: block;
@@ -309,7 +310,6 @@ img {
 .features__heading {
   margin-top: 0;
   margin-bottom: 0;
-  margin-right: 125px;
   font-weight: bold;
   font-size: 48px;
   line-height: 48px;
