@@ -1,0 +1,64 @@
+:root {
+  --main-font:;
+  --main-font-color: ;
+  --main-accent-color:;
+  --main-danger-color: ;
+  --main-light-color:;
+  --main-grey-color: ;
+  --main-border-radius:;
+  --main-box-shadow:;
+  --main-transition: background-color 0.3s ease, border 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+  --main-linear-bg: ;
+
+
+}
+
+
+/* GENERAL */
+html {
+  box-sizing: border-box;
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+/* CONTAINER */
+.container {
+  max-width: 1140px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
