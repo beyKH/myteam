@@ -207,7 +207,7 @@ img {
   content: '';
   width: 200px;
   height: 200px;
-  left: -265px;
+  left: calc(-20%);
   background-image: url("../img/hero-circle-black.svg");
   background-repeat: no-repeat;
 
@@ -220,7 +220,7 @@ img {
   background-image: url("../img/hero-double-circle.svg");
   width: 358px;
   height: 200px;
-  left: calc(50% + 150px);
+  right: calc(0%);
   top: 350px;
 }
 
@@ -285,7 +285,7 @@ img {
   z-index: 1;
   width: 200px;
   height: 244px;
-  left: calc(100%  + 100px);
+  left: calc(100% + 10px);
   top:calc(100% - 105px);
   background-image: url("../img/feature-bg.png");
   background-repeat: no-repeat;
@@ -293,7 +293,6 @@ img {
 
 
 }
-
 
 .features__title-box {
   width: 445px;
