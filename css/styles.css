@@ -527,3 +527,112 @@ background-image: url("../img/person-kady.png");
   background-color: var(--color-secondary-sacramento);
   color: var(--color-primary-white);
 }
+
+
+/* SITE-FOOTER */
+
+
+.site-footer {
+  background-color: var(--color-secondary-dark-green);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.site-footer__container {
+  display: flex;
+}
+
+
+.site-footer__left {
+  margin-right: 125px;
+}
+
+.site-footer__links-list {
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  display: flex;
+  list-style: none;
+}
+
+.site-footer__links-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.site-footer__link {
+  color: #fff;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease, opacity 0.3s ease;
+  text-transform: lowercase;
+}
+
+.site-footer__link:hover {
+  color: var(--color-primary-light-coral);
+}
+
+.site-footer__link:active {
+  opacity: 0.6;
+}
+
+address{
+  width: 445px;
+  margin-right: 125px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  font-style: normal;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
+
+
+.site-footer__right {
+  width: 255px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* justify-content: flex-end; */
+}
+
+.site-footer__social-networks {
+
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.sc {}
+
+
+.sc__item:not(:last-child){
+  margin-right: 16px;
+}
+.sc__link {
+  color: #fff;
+  transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+.sc__link:hover{
+  color: var(--color-primary-light-coral);
+}
+
+.sc__link:active{
+  opacity: 0.6;
+}
+
+
+.site-footer__copyright{
+  width: 255px;
+  margin-top: 50px;
+  margin-bottom: 0;
+  text-align: right;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  text-align: right;
+  color: #FFFFFF;
+  opacity: 0.6;
+}
