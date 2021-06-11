@@ -387,12 +387,33 @@ img {
 /* DELIVERY */
 
 .delivery {
+  position: relative;
   padding-top: 140px;
   padding-bottom: 140px;
   background-color:var(--color-secondary-deep-jungle-green);
+  overflow-y: hidden;
 }
 
-.delivery__container {}
+.delivery__container::before{
+  content: '';
+  top: 0;
+  left: 0;
+  /* display: block; */
+  position: absolute;
+  background-image: url("../img/delivery-top-bg.svg");
+  width: 147px;
+  height: 100px;
+}
+
+.delivery__container::after{
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  background-image: url("../img/delviery-bg-bottom.svg");
+  width: 200px;
+  height: 200px;
+}
 
 
 .delivery__desc {
@@ -496,13 +517,32 @@ background-image: url("../img/person-kady.png");
   padding-top: 76px;
   padding-bottom: 76px;
   background-color: var(--color-primary-light-coral);
+  overflow-y: hidden;
 
 }
 
 .get-started__container {
+  width: 920px;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   align-items: center;
+  position: relative;
 }
+
+.get-started__container::before{
+  z-index: 100;
+  content: '';
+  display: block;
+  position: absolute;
+  background-image: url("../img/get-started-bg.svg");
+  width: 200px;
+  height: 244px;
+  left: calc(-25%);
+  top: 50%;
+
+}
+
 
 .get-started__heading {
   margin-right: 260px;
