@@ -92,6 +92,11 @@ img {
   color: #fff;
   text-transform: lowercase;
   padding: 10px 32px;
+  transition: color 0.3s ease, background-color 0.3s ease, border 0.3s ease, opacity 0.3s ease;
+}
+
+.btn:active{
+  opacity: 0.6;
 }
 
 
@@ -389,7 +394,6 @@ img {
 
 .delivery__container {}
 
-.container {}
 
 .delivery__desc {
   width: 930px;
@@ -410,4 +414,116 @@ img {
 
 .delivery__heading span{
   color: var(--color-secondary-rapture-blue);
+}
+
+
+/* DELIVERY LIST */
+
+.delivery__list {
+  margin: 0;
+  padding: 0;
+  margin-top: 56px;
+  list-style: none;
+  display: flex;
+}
+
+.delivery__item {}
+
+.story {
+  padding-top: 50px;
+  width: 350px;
+  background-image: url("../img/icon-quotes.svg");
+  background-repeat: no-repeat;
+  background-position: center calc(5%);
+  text-align: center;
+}
+
+.story::after{
+  margin-right: auto;
+  margin-left: auto;
+  content: '';
+  display: block;
+  width: 62px;
+  height: 62px;
+  /* background-image: url("../img/person-kady.png"); */
+  background-size: contain;
+}
+
+.product-manager::after{
+background-image: url("../img/person-kady.png");
+}
+
+.product-founder::after{
+  background-image: url("../img/person-aiysha.png");
+}
+
+.product-co-founder::after{
+  background-image: url("../img/person-arthur.png");
+}
+
+.story__info {
+  margin-top: 0;
+  margin-bottom: 24px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-primary-white);
+
+}
+
+.story__author {
+  margin-top: 0;
+  margin-bottom: 2px;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: var(--color-secondary-rapture-blue);
+}
+
+.story__position {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 18px;
+  color: var(--color-primary-white);
+}
+
+/* GET-STARTED */
+
+.get-started {
+  padding-top: 76px;
+  padding-bottom: 76px;
+  background-color: var(--color-primary-light-coral);
+
+}
+
+.get-started__container {
+  display: flex;
+  align-items: center;
+}
+
+.get-started__heading {
+  margin-right: 260px;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 48px;
+  color: var(--color-secondary-sacramento);
+
+}
+
+.btn--getstarted {
+  color: var(--color-secondary-sacramento);
+  border-color: var(--color-secondary-sacramento);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+
+}
+
+
+.btn--getstarted:hover{
+  background-color: var(--color-secondary-sacramento);
+  color: var(--color-primary-white);
 }
