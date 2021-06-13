@@ -799,7 +799,7 @@ address{
   padding:32px 24px 65px;
   text-align: center;
   backface-visibility: hidden;
-  transition: transform 0.4s ease;
+  transition: transform 0.8s ease;
 }
 
 .director__img{
@@ -839,7 +839,7 @@ address{
   width: 100%;
   height: 100%;
   transform: rotateY(180deg);
-  transition: transform 0.4s ease;
+  transition: transform 0.8s ease;
   backface-visibility: hidden;
   background-color: var(--color-secondary-dark-green);
 }
@@ -963,3 +963,198 @@ address{
 }
 
 .client__img {}
+
+
+/* ---------------------  CONTACT ---------------------------- */
+
+.contact{
+  padding-top: 55px;
+  padding-bottom: 120px;
+  background-color: var(--color-primary-midnight-green);
+  background-image: url("../img/meet-directors-bg.png");
+  background-repeat: no-repeat;
+  background-position: calc(50% - 700px)  80px;
+}
+.contact__container {
+  display: flex;
+  position: relative;
+}
+
+.contact__container::after{
+  position: absolute;
+  right: calc(50% - 830px);
+  bottom: -120px;
+  content: '';
+  background-image: url("../img/contact-bottom-bg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 225px;
+  height: 200px;
+}
+.contact__details {
+  width: 540px;
+
+}
+
+.contact__heading{
+  margin-top: 0;
+  margin-bottom: 16px;
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 100px;
+  color: #FFFFFF;
+
+}
+
+.contact__info {
+  margin-top: 0;
+  margin-bottom: 32px;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 48px;
+  color: var(--color-primary-light-coral);
+}
+
+.contact__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+}
+
+.contact__item {
+  display: flex;
+  align-items: center;
+
+}
+
+.contact__item::before{
+  content: '';
+  flex-shrink: 0;
+  display: block;
+  margin-right: 23px;
+  width: 72px;
+  height: 72px;
+}
+
+.contact__icon-talent{
+  background-image: url("../img/icon-experienced-person.svg");
+  background-repeat: no-repeat;
+
+}
+
+.contact__icon-software{
+  background-image: url("../img/icon-easy-to-implement.svg");
+  background-repeat: no-repeat;
+
+}
+
+.contact__icon-innovation{
+  background-image: url("../img/icon-enhanced-productivity.svg");
+  background-repeat: no-repeat;
+
+}
+
+.contact__item:not(:last-child){
+  margin-bottom: 8px;
+}
+
+
+/* contact form */
+
+.contact__box {
+  width: 540px;
+  margin-left: 30px;
+}
+
+.contact__form {
+  width: 100%;
+}
+
+.form {}
+
+.form__box{
+
+  /* position: relative; */
+}
+
+.form__box:not(:last-child) {
+  margin-bottom: 24px;
+}
+
+.form__input {
+  padding:  0px 14px 16px 14px;
+  background-color: var(--color-secondary-police-blue);
+  border:none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  color: var(--color-primary-white);
+  width: 100%;
+
+}
+.form__input:focus{
+  outline: none;
+}
+.form__input::placeholder{
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 25px;
+  letter-spacing: -0.12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+
+
+
+.form__textarea{
+  resize: vertical;
+  min-height: 84px;
+  max-height: 200px;
+}
+
+
+.form__btn{
+  color: var(--color-primary-midnight-green);
+  background: #FFFFFF;
+  border-radius: 24px;
+}
+
+.form__notify-error{
+  display: none;
+  margin-top:8px;
+  padding-left: 16px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+  color: #F67E7E;
+}
+
+.form__notify-correct{
+  display: none;
+  margin-top:8px;
+  padding-left: 16px;
+  font-weight: bold;
+  font-size: 10px;
+  line-height: 13px;
+  color:  var(--color-secondary-rapture-blue);
+}
+
+/* VALIDATION */
+.form__input:not(:placeholder-shown):not(:focus):invalid {
+  border-color: var(--color-primary-light-coral);
+}
+
+.form__input:not(:placeholder-shown):not(:focus):invalid ~ .form__notify-error{
+  display: block;
+}
+
+.form__input:not(:placeholder-shown):not(:focus):valid{
+  border-color: var(--color-secondary-rapture-blue);
+}
+
+.form__input:not(:placeholder-shown):not(:focus):valid ~ .form__notify-correct{
+  border-color: var(--color-secondary-rapture-blue);
+  display: block;
+}
+
+

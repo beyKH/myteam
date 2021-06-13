@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project</title>
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <!-- <link rel="stylesheet" href="css/styles.min.css"> -->
+</head>
+
+<body>
+  <!-- SITE-HEADER -->
+  <header class="site__header">
+    <div class="container site__header__container">
+      <a class="logo" href="index.html">
+        <img class="logo__img" src="img/logo.svg" alt="logo of myteam" width="160" height="40">
+      </a>
+
+      <nav class="sitenav">
+        <ul class="sitenav__list">
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="index.html">home</a>
+          </li>
+          <li class="sitenav__item">
+            <a class="sitenav__link" href="about.html">about</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="btn button--primary" href="contact.html">contact us</a>
+    </div>
+  </header>
+
+  <main class="site-content">
+    <section class="contact">
+      <div class="container contact__container">
+        <div class="contact__details">
+          <h2 class="contact__heading">Contact</h2>
+          <p class="contact__info">Ask us about</p>
+          <ul class="contact__list">
+            <li class="contact__item contact__icon-talent">The quality of our talent network</li>
+            <li class="contact__item contact__icon-software">Usage & implementation of our software</li>
+            <li class="contact__item contact__icon-innovation">How we help drive innovation</li>
+          </ul>
+
+        </div>
+        <div class="contact__box">
+          <form class="contact__form form" action="https://echo.htmlacademy.ru" method="POST">
+            <div class="form__box">
+              <input class="form__input" type="text" name="name" placeholder="Name" required minlength="2" aria-label="name">
+              <p class="form__notify-error">This field is required</p>
+              <p class="form__notify-correct">Correct</p>
+            </div>
+            <div class="form__box">
+              <input class="form__input" type="email" pattern="[^ @]*@[^ @]*" name="email" placeholder="Email Address" aria-label="email"
+              required>
+              <p class="form__notify-error">This field is required</p>
+              <p class="form__notify-correct">Correct</p>
+            </div>
+            <div class="form__box">
+              <input class="form__input" type="text" name="comapny-name" placeholder="Company Name"
+              aria-label="company-name">
+              <p class="form__notify-error">This field is required</p>
+              <p class="form__notify-correct">Correct</p>
+            </div>
+            <div class="form__box">
+              <input class="form__input" type="text" name="title" placeholder="Title" aria-label="Title">
+              <p class="form__notify-error">This field is required</p>
+              <p class="form__notify-correct">Correct</p>
+            </div>
+            <div class="form__box">
+              <textarea class="form__input form__textarea" name="message" placeholder="Message" aria-label="Message"></textarea>
+              <p class="form__notify-error">This field is required</p>
+              <p class="form__notify-correct">Correct</p>
+            </div>
+
+            <button class="btn form__btn" type="submit">submit</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="site-footer__container container">
+
+      <div class="site-footer__left">
+        <a href="index.html" class="logo">
+          <img class="logo__img" src="img/logo.svg" alt="logo of my team" width="160" height="40">
+        </a>
+        <ul class="site-footer__links-list">
+          <li class="site-footer__links-item">
+            <a class="site-footer__link" href="">home</a>
+          </li>
+
+          <li class="site-footer__links-item">
+            <a class="site-footer__link" href="#">about</a>
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <address>
+          987 Hillcrest Lane <br>
+          Irvine, CA <br>
+          California 92714 <br>
+          Call Us : 949-833-7432
+        </address>
+      </div>
+
+      <div class="site-footer__right">
+        <ul class="site-footer__social-networks sc">
+
+          <li class="sc__item">
+            <a class="sc__link" href="#" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M22.675 0H1.325C0.593 0 0 0.593 0 1.325V22.676C0 23.407 0.593 24 1.325 24H12.82V14.706H9.692V11.084H12.82V8.413C12.82 5.313 14.713 3.625 17.479 3.625C18.804 3.625 19.942 3.724 20.274 3.768V7.008L18.356 7.009C16.852 7.009 16.561 7.724 16.561 8.772V11.085H20.148L19.681 14.707H16.561V24H22.677C23.407 24 24 23.407 24 22.675V1.325C24 0.593 23.407 0 22.675 0Z" />
+              </svg>
+
+
+            </a>
+
+          </li>
+
+          <li class="sc__item">
+            <a class="sc__link" href="#" target="_blank">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path
+                d="M12 0C5.373 0 0 5.372 0 12C0 17.084 3.163 21.426 7.627 23.174C7.522 22.225 7.427 20.769 7.669 19.733C7.887 18.796 9.076 13.768 9.076 13.768C9.076 13.768 8.717 13.049 8.717 11.986C8.717 10.318 9.684 9.072 10.888 9.072C11.911 9.072 12.406 9.841 12.406 10.762C12.406 11.791 11.751 13.33 11.412 14.757C11.129 15.951 12.011 16.926 13.189 16.926C15.322 16.926 16.961 14.677 16.961 11.431C16.961 8.558 14.897 6.549 11.949 6.549C8.535 6.549 6.531 9.11 6.531 11.756C6.531 12.787 6.928 13.894 7.424 14.494C7.522 14.613 7.536 14.718 7.507 14.839L7.174 16.199C7.121 16.419 7 16.466 6.772 16.36C5.273 15.662 4.336 13.471 4.336 11.711C4.336 7.926 7.086 4.449 12.265 4.449C16.428 4.449 19.663 7.416 19.663 11.38C19.663 15.516 17.056 18.844 13.436 18.844C12.22 18.844 11.077 18.213 10.686 17.466L9.938 20.319C9.667 21.362 8.936 22.669 8.446 23.465C9.57 23.812 10.763 24 12 24C18.627 24 24 18.627 24 12C24 5.372 18.627 0 12 0Z" />
+              </svg>
+
+
+            </a>
+          </li>
+          <li class="sc__item">
+            <a class="sc__link" href="#" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2 0H18C19.1 0 20 0.9 20 2V18C20 19.1 19.1 20 18 20H2C0.9 20 0 19.1 0 18V2C0 0.9 0.9 0 2 0ZM6 17V8H3V17H6ZM4.5 6.3C3.5 6.3 2.7 5.5 2.7 4.5C2.7 3.5 3.5 2.7 4.5 2.7C5.5 2.7 6.3 3.5 6.3 4.5C6.3 5.5 5.5 6.3 4.5 6.3ZM14 17H17V11.3C17 9.4 15.4 7.8 13.5 7.8C12.6 7.8 11.5 8.4 11 9.2V8H8V17H11V11.7C11 10.9 11.7 10.2 12.5 10.2C13.3 10.2 14 10.9 14 11.7V17Z"
+                />
+              </svg>
+
+
+            </a>
+          </li>
+
+
+        </ul>
+        <p class="site-footer__copyright">Copyright 2020. All Rights Reserved</p>
+      </div>
+    </div>
+
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
