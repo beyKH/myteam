@@ -1117,6 +1117,21 @@ address{
   color: var(--color-primary-midnight-green);
   background: #FFFFFF;
   border-radius: 24px;
+  opacity: 1;
+  transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease;
+}
+
+.form__btn:hover{
+  background-color: var(--color-primary-midnight-green);
+  border-color: var(--color-primary-white);
+  color: var(--color-primary-white);
+  opacity: 1;
+}
+
+.form__btn:active{
+  background: #FFFFFF;
+  opacity: 0.6;
+  color: var(--color-primary-midnight-green);
 }
 
 .form__notify-error{
